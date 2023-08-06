@@ -21,3 +21,25 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+
+// var textInput = JSON.parse(localStorage.getItem('inputcontent')) || ['', '', '', '', '', '', '', '', ''];
+
+var storage = localStorage.getItem('inputcontent');
+var textInput = JSON.parse(storage);
+if (!textInput) {
+  textInput = ['', '', '', '', '', '', '', '', ''];
+}
+
+$( ".btn" ).each(function( i ) {
+  $(this).siblings('.description').val(textInput[i]);
+
+  $(this).on('click', function() {
+    var inputContent = $(this).siblings('.description').val();
+    textInput[i] = inputContent;
+  
+    localStorage.setItem('inputcontent', JSON.stringify(textInput));
+  } );
+
+});
+// alert(localStorage.getItem('inputcontent'));
