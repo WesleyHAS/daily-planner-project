@@ -12,9 +12,9 @@ N/A
 
 Please visit following link to see final results
 
-https://wesleyhas.github.io/
+https://wesleyhas.github.io/daily-planner-project/
 
-Select a time of the day, type what activity you want to save and click on save. It will stay on the page even if you refresh the page. Once local storage is cleaner, the planner is cleaned.
+Select a time of the day, type what activity you want to save and click on save. It will stay on the page even if you refresh the page. Once local storage is cleared, the planner is cleaned.
 
 ## Preview of Page
 
